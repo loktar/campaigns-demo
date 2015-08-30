@@ -26,3 +26,8 @@ TODO - run through fresh setup on a new machine
 
 - run `rspec` in project root directory
 - rake jasmine, localhost:8888, OR run rake jasmine:ci
+
+## Backlog
+
+- Show some sort of loading state while campaigns are loading
+- Handle error fetching campaign data

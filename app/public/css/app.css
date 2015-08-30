@@ -1,0 +1,77 @@
+body {
+    background: rgb(245, 245, 245);
+    color: rgb(42, 42, 42);
+    font-family: "Antenna Cond Black","Helvetica","sans-serif";
+}
+
+a, a:visited {
+    color: rgb(42, 42, 42);
+    text-decoration: none;
+}
+
+h1 {
+    background: #ffffff;
+    font-size: 50px;
+    line-height: 58px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#campaigns-wrapper {
+    padding: 20px 0;
+}
+
+#campaigns {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#campaigns ol {
+}
+
+#campaigns ol:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.campaign {
+    display: block;
+    float:left;
+    padding: 0 10px 10px 0;
+    width: 385px;
+    vertical-align: top;
+}
+
+.campaign a {
+    background: #ffffff;
+    display: block;
+    height: 220px;
+}
+
+.campaign img {
+    float: left;
+}
+
+.details {
+    float: left;
+    width: 165px;
+}
+
+.title, .tagline {
+    padding: 0 20px 1em 20px;
+}
+
+.title {
+    color: #00b998;
+    padding-top: 20px;
+}
+
+a:hover .title {
+    color: rgb(235, 20, 120);
+}
+
+.tagline {
+    font-size: .8em;
+}
+

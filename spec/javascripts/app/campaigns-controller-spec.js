@@ -78,12 +78,12 @@ describe('app.CampaignsController', function () {
             });
 
             $searchEl.val('FOO');
-            $searchEl.trigger('change');
+            $searchEl.trigger('input');
 
             expect($el.find('.campaign:not(.hidden)').length).toEqual(1);
         });
 
-        it('should hide campaigns where neither the title nor tagline matche the query', function () {
+        it('should hide campaigns where neither the title nor tagline match the query', function () {
             var $el = $('<div>');
             var $searchEl = $('<input>');
 
@@ -96,9 +96,9 @@ describe('app.CampaignsController', function () {
             });
 
             $searchEl.val('does not match');
-            $searchEl.trigger('change');
+            $searchEl.trigger('input');
 
-            expect($el.find('.campaign:not(.hidden)').length).toEqual(0);
+            expect($el.find('.campaign.hidden').length).toEqual(1);
         });
 
         describe('when the query changes and becomes a match', function () {

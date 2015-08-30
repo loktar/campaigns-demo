@@ -25,3 +25,4 @@ TODO - run through fresh setup on a new machine
 ## Tests
 
 - run `rspec` in project root directory
+- rake jasmine, localhost:8888, OR run rake jasmine:ci

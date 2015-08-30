@@ -8,15 +8,23 @@ GEM
     haml (4.0.7)
       tilt
     hitimes (1.2.2)
+    jasmine (2.3.0)
+      jasmine-core (~> 2.3)
+      phantomjs
+      rack (>= 1.2.1)
+      rake
+    jasmine-core (2.3.4)
     listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
+    phantomjs (1.9.8.0)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rake (10.4.2)
     rb-fsevent (0.9.5)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
@@ -48,6 +56,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  jasmine
   rack-test
   rerun
   rspec

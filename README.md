@@ -31,3 +31,4 @@ TODO - run through fresh setup on a new machine
 
 - Show some sort of loading state while campaigns are loading
 - Handle error fetching campaign data
+- Handle case when campaigns load after a search term has already been entered (promises?)

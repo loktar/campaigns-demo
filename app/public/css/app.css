@@ -18,15 +18,18 @@ h1 {
 }
 
 #campaigns-wrapper {
-    padding: 20px 0;
-}
-
-#campaigns {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 0 20px;
 }
 
-#campaigns ol {
+#search {
+    padding: 10px 0 10px;
+}
+
+#search input {
+    font-size: 1.3em;
+    width: 380px;
 }
 
 #campaigns ol:after {
@@ -41,6 +44,10 @@ h1 {
     padding: 0 10px 10px 0;
     width: 385px;
     vertical-align: top;
+}
+
+.campaign.hidden {
+    display: none;
 }
 
 .campaign a {

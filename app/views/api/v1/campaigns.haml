@@ -1,3 +1,8 @@
 %ol
   - @campaigns.each do |campaign|
-    %li= campaign['title']
+    - # photo, title, tagline, link to campaign page on Indiegogo
+    %li
+      %a{ href: campaign['web_url'], title: 'View campaign' }
+        %img.photo{ src: campaign['baseball_card_image_url'] }
+        .title= campaign['title']
+        .tagline= campaign['tagline']

@@ -7,6 +7,7 @@ gem 'sinatra'
 
 group :development, :test do
   gem 'jasmine'
+  gem 'nokogiri'
   gem 'rack-test'
   gem 'rerun'
   gem 'rspec'

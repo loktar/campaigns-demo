@@ -1,5 +1,6 @@
 require 'spec_helper'
 require File.expand_path '../../app/app', __FILE__
+require 'nokogiri'
 
 describe 'App' do
   def app
@@ -15,22 +16,25 @@ describe 'App' do
 
   describe 'the API' do
     describe 'the campaigns endpoint' do
-      before do
-        # TODO: Use cached response to speed up specs
-        get '/api/v1/campaigns.json'
+
+      # TODO use fixture response
+      before :all do
+        get '/api/v1/campaigns.html'
+        @response = last_response
       end
+
+      let(:html) { Nokogiri::HTML(@response.body) }
 
       it 'should be a success' do
-        expect(last_response).to be_ok
-      end
-
-      it 'should be valid json' do
-        JSON.parse(last_response.body)
+        expect(@response).to be_ok
       end
 
       it 'should contain campaign data' do
-        json = JSON.parse(last_response.body)
-        expect(json['response'][0]['funding_type']).to be_a String
+        expect(html.css('.campaign .title').count).to be > 0
+      end
+
+      it 'should not specify http or https for image urls' do
+        expect(html.css('.campaign img')[0]['src']).to start_with '//'
       end
     end
   end

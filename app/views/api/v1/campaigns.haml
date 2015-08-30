@@ -3,7 +3,7 @@
     - # photo, title, tagline, link to campaign page on Indiegogo
     %li.campaign
       %a{ href: campaign['web_url'] }
-        %img.photo{ src: campaign['baseball_card_image_url'] }
+        %img.photo{ src: campaign['baseball_card_image_url'].gsub(/^[^\/]+/, '') }
         .details
           .title= campaign['title']
           .tagline= campaign['tagline']

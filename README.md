@@ -5,7 +5,7 @@ TODO - run through fresh setup on a new machine
 ## Live Demo
 A live demo of this project is available here: https://campaigns-demo.herokuapp.com/
 
-Note: This is hosted on a free Heroku plan so it may take a few seconds for the first request to load
+Note: This is hosted on a free Heroku plan so it may take a few seconds for the first request to load.
 
 ## Installation
 
@@ -75,6 +75,7 @@ rspec
 
 ### Unit/BDD tests (Jasmine)
 
+Run the Jasmine server:
 ```bash
 rake jasmine
 ```

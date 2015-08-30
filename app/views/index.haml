@@ -3,5 +3,14 @@
 %html
   %head
     %title All The Campaigns
+
+    - %w(reset app).each do |file|
+      %link{ href: "/css/#{file}.css", rel: 'stylesheet', type: 'text/css' }
   %body
-    Let's do some campaigns!
+    %h1 Let's do some campaigns!
+
+    #campaigns
+
+    %script{ src: 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js' }
+    - %w(campaigns-controller app).each do |file|
+      %script{ src: "/js/#{file}.js" }

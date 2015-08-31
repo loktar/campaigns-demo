@@ -1,5 +1,3 @@
-TODO - run through fresh setup on a new machine
-
 # Indiegogo Campaigns Demo
 
 ## Live Demo
@@ -37,7 +35,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 \curl -sSL https://get.rvm.io | bash
 ```
 
-Additional instructions can be found here: https://rvm.io/rvm/install
+Additional instructions, including how to install `gpg`, can be found here: https://rvm.io/rvm/install
 
 #### Ruby
 
